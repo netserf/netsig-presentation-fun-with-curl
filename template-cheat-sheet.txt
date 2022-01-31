@@ -1,3 +1,0 @@
-# Cheat Sheet for NetSIG presentation - GCP for Newbies
-# For more details:
-# https://github.com/netserf/netsig-presentation-gcp-for-newbies
