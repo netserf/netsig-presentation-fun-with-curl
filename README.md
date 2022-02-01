@@ -1,16 +1,17 @@
-# NetSIG Presentation - [Presentation Title]
+# NetSIG Presentation - Fun with Curl
 
-[![Actions Status](https://github.com/netserf/template-presentation-repo/workflows/Markdown%20Lint/badge.svg)](https://github.com/netserf/template-presentation-repo/actions)
-[![Actions Status](https://github.com/netserf/template-presentation-repo/workflows/Markdown%20Links/badge.svg)](https://github.com/netserf/template-presentation-repo/actions)
+[![Actions Status](https://github.com/netserf/netsig-presentation-fun-with-curl/workflows/Markdown%20Lint/badge.svg)](https://github.com/netserf/netsig-presentation-fun-with-curl/actions)
+[![Actions Status](https://github.com/netserf/netsig-presentation-fun-with-curl/workflows/Markdown%20Links/badge.svg)](https://github.com/netserf/netsig-presentation-fun-with-curl/actions)
 
 ## Presentation Summary
 
-In this session we'll look at ...
-Topics will include ...
+In this session we'll try out the command line tool curl for interacting with
+various network services such as http, ftp and dict. There will be many
+examples provided for interacting with your favourite web services.
 
 ## Presentation Slides
 
-* [Presentation Title](dummy-slides.txt)
+* [Fun with Curl](netsig-presentation-fun-with-curl.pdf)
 
 ## Who is NetSIG?
 
