@@ -1,17 +1,18 @@
-# NetSIG Presentation - Fun with Curl
+# NetSIG Presentation - Fun with cURL
 
 [![Actions Status](https://github.com/netserf/netsig-presentation-fun-with-curl/workflows/Markdown%20Lint/badge.svg)](https://github.com/netserf/netsig-presentation-fun-with-curl/actions)
 [![Actions Status](https://github.com/netserf/netsig-presentation-fun-with-curl/workflows/Markdown%20Links/badge.svg)](https://github.com/netserf/netsig-presentation-fun-with-curl/actions)
 
 ## Presentation Summary
 
-In this session we'll try out the command line tool curl for interacting with
-various network services such as http, ftp and dict. There will be many
-examples provided for interacting with your favourite web services.
+In this session we'll check out a small fraction of the things you can do with
+the cURL command line tool. We'll use it to interact with various network
+services such as http, ftp and dict. There will be many examples provided.
+Please try them out. Its fun!
 
 ## Presentation Slides
 
-* [Fun with Curl](netsig-presentation-fun-with-curl.pdf)
+* [Fun with cURL](netsig-presentation-fun-with-curl.pdf)
 
 ## Who is NetSIG?
 
@@ -27,7 +28,7 @@ These presentations are currently hosted online.
 
 ## Where can I find the cheatsheet for this presentation?
 
-* [Template Cheat Sheet](template-cheat-sheet.txt)
+* [cURL Cheat Sheet](curl-cheat-sheet.txt)
 
 ## Contributing
 

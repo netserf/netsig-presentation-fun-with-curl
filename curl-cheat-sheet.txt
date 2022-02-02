@@ -1,0 +1,95 @@
+# Cheat Sheet for NetSIG presentation - Fun with cURL
+# For more details:
+# https://github.com/netserf/netsig-presentation-fun-with-curl
+
+# curl installation on Ubuntu 18.04 / 20.04
+sudo apt update
+sudo apt install curl
+
+# curl installation on CentOS 7
+sudo yum check-update
+sudo yum install curl
+
+# basic cURL usage
+curl http://vicpimakers.ca
+
+curl http://vicpimakers.ca --location
+
+curl http://vicpimakers.ca --location --head
+
+curl http://vicpimakers.ca --location --head --verbose 
+
+curl http://vicpimakers.ca --location --head --verbose \
+    --trace debug.out
+
+# save URL to file
+curl https://vicpimakers.ca -o vicpimakers_ca.html
+
+curl -O https://vicpimakers.ca
+
+curl -O https://vicpimakers.ca/robots.txt
+
+# recommendation:  use wget if you want to crawl an entire site
+wget --spider --recursive vicpimakers.ca
+
+# http methods
+curl --request GET https://vicpimakers.ca
+
+curl --request POST https://vicpimakers.ca
+
+curl --request HEAD https://vicpimakers.ca
+
+curl --request POST \
+    --data 'url=https%3A%2F%2Fvicpimakers.ca' \
+    'https://cleanuri.com/api/v1/shorten'
+
+# a curl alternative - httpie
+pip install httpie
+
+http -v httpbin.org/post hello=World
+# vs.
+curl -v -X POST httpbin.org/post -d '{"hello": "world"}'
+
+# http status codes
+curl -Is https://www.twitter.com -L | grep HTTP/
+
+curl -s -o /dev/null -w "%{http_code}" \
+    -L https://www.twitter.com
+
+# explore request headers
+curl http://nghttp2.org -I -L -v
+
+curl http://nghttp2.org -I -L -v --http2
+
+# ftp using curl
+head -c 5MB /dev/urandom > randofile.bin
+curl --user anonymous:anonymous \
+    --upload-file randofile.bin \
+    ftp://speedtest.tele2.net/upload/
+
+curl --user anonymous:anonymous \
+    ftp://speedtest.tele2.net/
+
+curl --user anonymous:anonymous \
+    -O ftp://speedtest.tele2.net/5MB.zip
+
+# dict using curl
+curl dict://dict.org/d:curl
+
+$ alias dict='function _dict(){ curl "dict://dict.org/d:${1}"; }; _dict'
+$ dict curl    
+
+# fun sites that use curl
+
+# weather reports
+curl wttr.in
+alias wttr='function _wttr(){ curl "wttr.in/${1}"; }; _wttr'
+wttr
+wttr toronto
+wttr moon
+
+# qr code generation
+curl qrenco.de/https://vicpimakers.ca
+
+# ascii animation
+$ curl https://asciitv.fr
